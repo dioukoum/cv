@@ -1,0 +1,80 @@
+* {
+    font-family: arial;
+}
+
+:root {
+    --color1: #1B304D;
+    --color2: #D9D9D9;
+    --color3: #FFFFFF;
+    --p: 14px
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 672px;
+    height: 948px;
+    display: flex;
+}
+
+aside {
+    background-color: var(--color2);
+    width: 40%;
+}
+
+.courbe {
+    background-color: var(--color1);
+    height: 250px;
+    position: relative;
+    border-radius: 0 0 113px 113px;
+}
+
+.courbe img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profil-container {
+    margin-top: 70px;
+}
+
+.profil-container .profil {
+    padding: 15px;
+}
+
+.profil-container .profil .profil-barre {
+    width: 80%;
+    height: 35px;
+    background-color: white;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+.profil-container .profil .profil-barre span {
+    display: flex;
+    background-color: var(--color1);
+    width: 70%;
+    height: 100%;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color3);
+    font-weight: bold;
+}
+
+.profil-container .profil p {
+    font-size: var(--p);
+}
+
+article {
+    background-color: #7490b68c;
+    width: 60%;
+}
