@@ -9,6 +9,7 @@
     --p: 14px;
     --h1: 30px;
     --h2: 20px;
+    --mobileSize: 10px;
 }
 
 body {
@@ -161,4 +162,60 @@ article .profil-container .profil .competences {
     font-size: small;
     display: flex;
     column-gap: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    main {
+        width: 100vw;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    aside {
+        background-color: var(--color2);
+        width: 40%;
+    }
+
+    .courbe {
+        background-color: var(--color1);
+        height: 150px;
+        position: relative;
+        border-radius: 0 0 113px 113px;
+    }
+
+    .courbe img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .email {
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+
+    aside .profil-container p {
+        font-size: 5px;
+        max-width: 100px;
+    }
+
+    article header h1 {
+        font-size: var(--p);
+        margin-bottom: 0;
+    }
+
+    article header h2 {
+        font-size: var(--mobileSize);
+        margin-top: 0;
+        text-align: right;
+    }
 }
