@@ -203,7 +203,7 @@ article .profil-container .profil .competences {
         word-wrap: break-word;
     }
 
-    section .profil-container p {
+    aside .profil-container p {
         font-size: 5px;
         max-width: 100px;
     }
