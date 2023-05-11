@@ -24,7 +24,7 @@ main {
     color: var(--color1);
 }
 
-aside {
+section {
     background-color: var(--color2);
     width: 40%;
 }
@@ -203,7 +203,7 @@ article .profil-container .profil .competences {
         word-wrap: break-word;
     }
 
-    aside .profil-container p {
+    section .profil-container p {
         font-size: 5px;
         max-width: 100px;
     }
